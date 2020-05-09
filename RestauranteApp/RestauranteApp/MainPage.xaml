@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="RestauranteApp.MainPage">
 
-    <Grid   >
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
@@ -16,15 +16,13 @@
             <RowDefinition Height="2*" />
             <RowDefinition Height="2*" />
             <RowDefinition Height="3*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
 
-        <Image>
-
-        </Image>
+        <Image Source="IconoRestaurant.png" Grid.Row="1" Grid.Column="1"  />
 
         <Entry Placeholder="Usuario"  Grid.Row="3" Grid.Column="1"  />
 

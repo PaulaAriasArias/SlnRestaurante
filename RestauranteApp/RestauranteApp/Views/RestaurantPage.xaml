@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RestauranteApp.Views.RestaurantPage">
+
+    <Grid>
+        <ListView ItemsSource="{Binding Restaurantes}" CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Margin="7" Padding="0" HasShadow="False" BorderColor="LightCyan">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Imagen}" HeightRequest="100"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Nombre}" FontSize="Medium"></Label>
+                                    <Label Text="{Binding Direccion}" FontSize="Micro" TextColor="Gray"></Label>
+                                    <Label Text="{Binding Telefono}" FontSize="Small" TextColor="Gray"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>
