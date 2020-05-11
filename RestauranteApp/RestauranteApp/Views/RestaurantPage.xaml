@@ -7,18 +7,28 @@
              x:Class="RestauranteApp.Views.RestaurantPage">
 
     <Grid>
-        <ListView ItemsSource="{Binding Restaurantes}" CachingStrategy="RecycleElement">
+        <ListView ItemsSource="{Binding Restaurantes}" HasUnevenRows="True"
+                  CachingStrategy="RecycleElement">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame Margin="7" Padding="0" HasShadow="False" BorderColor="LightCyan">
+                        <Frame HasShadow="False" 
+                               BorderColor="LightGray" Margin="7" Padding="0">
                             <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding Imagen}" HeightRequest="100"/>
+                                <Frame CornerRadius="50" 
+                                   HeightRequest="100"
+                                   WidthRequest="100"
+                                   HorizontalOptions="Center"
+                                   Padding="0"
+                                   IsClippedToBounds="True">    
+                                    <Image Source="{Binding Imagen}" HeightRequest="100" WidthRequest="100"/>
+                                </Frame>
                                 <StackLayout>
-                                    <Label Text="{Binding Nombre}" FontSize="Medium"></Label>
-                                    <Label Text="{Binding Direccion}" FontSize="Micro" TextColor="Gray"></Label>
-                                    <Label Text="{Binding Telefono}" FontSize="Small" TextColor="Gray"></Label>
+                                    <Label Text="{Binding Nombre}" FontSize="Medium" />
+                                    <Label Text="{Binding Direccion}" FontSize="Micro" TextColor="Gray"/>
+                                    <Label Text="{Binding Telefono}" FontSize="Small"/>
                                 </StackLayout>
+
                             </StackLayout>
                         </Frame>
                     </ViewCell>
