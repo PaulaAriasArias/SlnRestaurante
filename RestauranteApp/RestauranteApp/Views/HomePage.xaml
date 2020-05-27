@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:views="clr-namespace:RestauranteApp.Views"
              mc:Ignorable="d"
-             x:Class="RestauranteApp.Views.HomePage">
+             x:Class="RestauranteApp.Views.HomePage"
+            Title="Aplicacion Restaurante ">
   <!--Pages can be added as references or inline-->
     
     <views:RestaurantPage Title="Restaurante" />

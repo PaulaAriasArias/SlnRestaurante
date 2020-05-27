@@ -29,7 +29,9 @@ namespace RestauranteApp.Views
 
             if (email == "admin@admin.com" && password =="admin")
             {
-                await this.Navigation.PushModalAsync(new HomePage());
+                App.Current.MainPage = new NavigationPage(new HomePage());
+
+                //await this.Navigation.PushModalAsync(new HomePage());
             }
             else
             {
