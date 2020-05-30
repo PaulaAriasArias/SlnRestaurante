@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.restauranteapp" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0.0" package="com.cedesistemas.paula" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-	<application android:label="RestauranteApp.Android">
+	<application android:label="RestauranteApp.Android" android:icon="@drawable/IconoRestaurant">
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBlAsDlJ8P4QI4XCNUUlUp1kVKaAQaz8cA"></meta-data>
-		<meta-data android:name="com.google.andorid.gmsversion"
-				   android:value="@integer/google_play_services_version"/>
-		<uses-library android:name="org.apache.http.legacy" android:required="true"/>
+		<meta-data android:name="com.google.andorid.gmsversion" android:value="@integer/google_play_services_version" />
+		<uses-library android:name="org.apache.http.legacy" android:required="true" />
 	</application>
-	
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
